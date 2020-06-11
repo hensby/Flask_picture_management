@@ -32,7 +32,7 @@
         <input type="text" class="form-control" placeholder="{{ result[3] }}" name="Telnum" style="width:60%" value="{{ result[3]}}">
         <th>Keywords</th>
         <input type="text" class="form-control" placeholder="{{ result[5] }}" name="Keywords" style="width:60%" value="{{ result[5]}}">
-        <input type="file" size="300" name="files" accept="image/*"/>
+        <input type="file" size="300" name="files" accept="image/*", onchange="checkinfo(this)"/>
         <span class="input-group-btn">
             <button class="btn btn-default" type="submit">save</button>
         </span>
@@ -40,3 +40,11 @@
 </div>
 </body>
 </html>
+<script>
+function checkinfo(obj){
+    var len = obj.files[0].size
+    if(len > 2 * 1024 * 1024) {
+        alert("The picture cannot large than 2M");
+    }
+}
+</script>

@@ -87,6 +87,12 @@ def home():
             return render_template('home.html', result=tmp_data)
         if request.form['type'] == 'edit':
             print(request.form)
+            upload_file = request.files["files"]
+            size = len(upload_file.read())
+            upload_file.seek(0)
+            if 2097152 < size:
+                print("larger than 2M")
+                return render_template('home.html', result=all_data_dict)
             tmp_data = {}
             for _, all_data_item in all_data_dict.items():
                 if all_data_item[0].lower() == request.form['Name'].lower():
@@ -130,7 +136,7 @@ def home():
             upload_file = request.files["files"]
             size = len(upload_file.read())
             upload_file.seek(0)
-            if 1048576 < size:
+            if 2097152 < size:
                 print("larger than 2M")
                 return render_template('home.html', result=all_data_dict)
             for _, all_data_item in all_data_dict.items():
