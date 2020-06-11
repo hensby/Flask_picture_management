@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>People management</title>
+    <link rel="stylesheet" href="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+</div>
+<div class="container">
+    <h1>Hengchao Wang assignment1</h1>
+    <h2>1001778272</h2>
+    <a href="/home">back</a>
+</div>
+<div class="container">
+    <table class="table">
+        <tr><th>Pictures</th><th>name</th></tr>
+        {%for rel in result%}
+        <tr>
+            <td><img style="width:30%;" src="{{ url_for('static', filename=rel[0])}}"></td>
+            <td>{{rel[0]}}</td>
+{#            <td>{{rel[1]}}</td>#}
+        </tr>
+        {%endfor%}
+    </table>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:width="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>People management</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<div class="container">
+    <h1>Hengchao Wang assignment1</h1>
+    <h2>1001778272</h2>
+</div>
+<body>
+
+<div class="container">
+    <form action="/home" method="post">
+        <input name="type" value="searchByName" style="display:none;">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Input Name" name="name">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">search</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="container">
+    <form action="/home" method="post">
+        <input name="type" value="searchBySalary" style="display:none;">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <input type="text" class="form-control" style="width:50%;" placeholder="input min salary"
+                           name="min">
+                    <input type="text" class="form-control" style="width:50%;" placeholder="input max salary"
+                           name="max">
+                    {#                    <input type="text" class="form-control" style="width:40%;" placeholder="input word" name="word">#}
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">search</button>
+                    </span>
+                </div><!-- /input-group -->
+            </div><!-- /.col-lg-6 -->
+        </div>
+    </form>
+    <a href="/all_pictures">all pictures</a>
+</div>
+
+<div class="container">
+    <form action="/add_user" method="post">
+        <input name="type" value="add" style="display:none;">
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="input-group">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="submit">Add New User</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+
+{#<h1>&nbsp;</h1>#}
+<div class="container">
+
+    <table class="table" border="0" cellspacing="0" width="2000">
+        {#        <caption><a class="btn btn-default btn-primary" href="/addview">Add</a></caption>#}
+        <tr style=font-size:25px>
+            <th>Name</th>
+            <th>Salary</th>
+            <th>Room</th>
+            <th>Telnum</th>
+            <th>Keywords</th>
+            <th>Picture</th>
+        </tr>
+        {% for rel in result.values() %}
+            <form action="/home" method="post">
+                <input name="type" value="delete" style="display:none;">
+                <tr>
+                    <td>{{ rel[0] }}</td>
+                    <td>{{ rel[1] }}</td>
+                    <td>{{ rel[2] }}</td>
+                    <td>{{ rel[3] }}</td>
+                    <td>{{ rel[5] }}</td>
+                    <td><img style="width:20%;" src="{{ url_for('static', filename=rel[4]) }}"></td>
+                    <td>
+                        <button class="btn btn-default" type="submit" name="deleteValueName"
+                                value="{{ rel[0] + "," + rel[1] }}">Delete
+                        </button>
+                    </td>
+                    <td>
+                        <button class="btn btn-default" type="submit" formaction="/edit_page" name="edit"
+                                value="{{ rel }}">Edit
+                        </button>
+                    </td>
+                </tr>
+            </form>
+        {% endfor %}
+        {% if not result %}
+            no data or matching available
+        {% endif %}
+    </table>
+    <a href="/all_pictures">all pictures</a>
+
+</div>
+
+
+</body>
+</html>

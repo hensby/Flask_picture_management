@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>People management</title>
+    <link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+<div class="container">
+    <h1>Hengchao Wang assignment1</h1>
+    <h2>1001778272</h2>
+    <a href="/home">back</a>
+</div>
+
+<body>
+<div class="container">
+    <form action="/home" method="post" enctype="multipart/form-data">
+        <input name="type" value="add" style="display:none;">
+        <th>Name</th>
+        <input type="text" class="form-control" placeholder="{{ result[0] }}" name="Name" style="width:60%" required="required" >
+        <th>Salary</th>
+        <input type="text" class="form-control" placeholder="{{ result[1] }}" name="Salary" style="width:60%" >
+        <th>Room</th>
+        <input type="text" class="form-control" placeholder="{{ result[2] }}" name="Room" style="width:60%" >
+        <th>Telnum</th>
+        <input type="text" class="form-control" placeholder="{{ result[3] }}" name="Telnum" style="width:60%" >
+        <th>Keywords</th>
+        <input type="text" class="form-control" placeholder="{{ result[5] }}" name="Keywords" style="width:60%" >
+        <input type="file" size="300" name="files"/>
+        <span class="input-group-btn">
+            <button class="btn btn-default" type="submit">save</button>
+        </span>
+    </form>
+</div>
+</body>
+</html>
