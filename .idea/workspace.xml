@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6788b003-56a1-42ed-ac18-5587bf7d4d50" name="Default Changelist" comment="" />
+    <list default="true" id="6788b003-56a1-42ed-ac18-5587bf7d4d50" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/people.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/people.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/Chris195.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/someone7.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/add.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +24,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1d5womKjoJ74WyxmkwaF9PkDxLZ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -27,7 +38,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
@@ -113,6 +124,8 @@
       <workItem from="1591728451382" duration="33000" />
       <workItem from="1591731248879" duration="31797000" />
       <workItem from="1591816066098" duration="10007000" />
+      <workItem from="1591898161772" duration="89000" />
+      <workItem from="1591910097774" duration="4254000" />
     </task>
     <servers />
   </component>
@@ -120,38 +133,51 @@
     <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591910128600">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="424" y="202" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1080/1920.-40.1792.1120@0.0.1920.1080" timestamp="1591910128600" />
     <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591742769502">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="698" y="294" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1080/1920.-40.1792.1120@0.0.1920.1080" timestamp="1591742769502" />
-    <state x="767" y="468" key="Github.ShareDialog" timestamp="1591815715977">
-      <screen x="0" y="0" width="1792" height="1120" />
+    <state x="485" y="36" key="CommitChangelistDialog2" timestamp="1591913950697">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="485" y="36" key="CommitChangelistDialog2/0.0.1920.1080/1920.-40.1792.1120@0.0.1920.1080" timestamp="1591913950697" />
+    <state x="822" y="451" key="Github.ShareDialog" timestamp="1591898199824">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="767" y="468" key="Github.ShareDialog/0.0.1792.1120@0.0.1792.1120" timestamp="1591815715977" />
-    <state width="1878" height="284" key="GridCell.Tab.0.bottom" timestamp="1591831285056">
+    <state x="822" y="451" key="Github.ShareDialog/0.0.1920.1080/1920.-40.1792.1120@0.0.1920.1080" timestamp="1591898199824" />
+    <state x="674" y="160" key="Github.UntrackedFilesDialog" timestamp="1591898206658">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="674" y="160" key="Github.UntrackedFilesDialog/0.0.1920.1080/1920.-40.1792.1120@0.0.1920.1080" timestamp="1591898206658" />
+    <state width="1878" height="284" key="GridCell.Tab.0.bottom" timestamp="1591914924263">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1750" height="297" key="GridCell.Tab.0.bottom/0.0.1792.1120@0.0.1792.1120" timestamp="1591815831883" />
     <state width="1878" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.-17.1792.1097@0.0.1920.1080" timestamp="1591816406671" />
-    <state width="1878" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.-40.1792.1120@0.0.1920.1080" timestamp="1591831285056" />
-    <state width="1878" height="284" key="GridCell.Tab.0.center" timestamp="1591831285053">
+    <state width="1878" height="284" key="GridCell.Tab.0.bottom/0.0.1920.1080/1920.-40.1792.1120@0.0.1920.1080" timestamp="1591914924263" />
+    <state width="1878" height="284" key="GridCell.Tab.0.center" timestamp="1591914924261">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1750" height="297" key="GridCell.Tab.0.center/0.0.1792.1120@0.0.1792.1120" timestamp="1591815831882" />
     <state width="1878" height="284" key="GridCell.Tab.0.center/0.0.1920.1080/1920.-17.1792.1097@0.0.1920.1080" timestamp="1591816406670" />
-    <state width="1878" height="284" key="GridCell.Tab.0.center/0.0.1920.1080/1920.-40.1792.1120@0.0.1920.1080" timestamp="1591831285053" />
-    <state width="1878" height="284" key="GridCell.Tab.0.left" timestamp="1591831285052">
+    <state width="1878" height="284" key="GridCell.Tab.0.center/0.0.1920.1080/1920.-40.1792.1120@0.0.1920.1080" timestamp="1591914924261" />
+    <state width="1878" height="284" key="GridCell.Tab.0.left" timestamp="1591914924260">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1750" height="297" key="GridCell.Tab.0.left/0.0.1792.1120@0.0.1792.1120" timestamp="1591815831881" />
     <state width="1878" height="284" key="GridCell.Tab.0.left/0.0.1920.1080/1920.-17.1792.1097@0.0.1920.1080" timestamp="1591816406670" />
-    <state width="1878" height="284" key="GridCell.Tab.0.left/0.0.1920.1080/1920.-40.1792.1120@0.0.1920.1080" timestamp="1591831285052" />
-    <state width="1878" height="284" key="GridCell.Tab.0.right" timestamp="1591831285055">
+    <state width="1878" height="284" key="GridCell.Tab.0.left/0.0.1920.1080/1920.-40.1792.1120@0.0.1920.1080" timestamp="1591914924260" />
+    <state width="1878" height="284" key="GridCell.Tab.0.right" timestamp="1591914924262">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state width="1750" height="297" key="GridCell.Tab.0.right/0.0.1792.1120@0.0.1792.1120" timestamp="1591815831882" />
     <state width="1878" height="284" key="GridCell.Tab.0.right/0.0.1920.1080/1920.-17.1792.1097@0.0.1920.1080" timestamp="1591816406671" />
-    <state width="1878" height="284" key="GridCell.Tab.0.right/0.0.1920.1080/1920.-40.1792.1120@0.0.1920.1080" timestamp="1591831285055" />
+    <state width="1878" height="284" key="GridCell.Tab.0.right/0.0.1920.1080/1920.-40.1792.1120@0.0.1920.1080" timestamp="1591914924262" />
     <state width="1878" height="370" key="GridCell.Tab.1.bottom" timestamp="1591815812375">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
@@ -180,7 +206,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/untitled$untitled.coverage" NAME="untitled Coverage Results" MODIFIED="1591750706833" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1591815668622" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Flask_User_Management$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1591830465211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Flask_User_Management$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1591914924251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/untitled$test.coverage" NAME="test Coverage Results" MODIFIED="1591751878033" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

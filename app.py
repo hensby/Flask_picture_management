@@ -20,12 +20,16 @@ all_data_dict = {}
 def updateData():
     with open('data/people.csv', encoding='utf8') as r:
         d = csv.reader(r, delimiter=',', skipinitialspace=True)
-
+        name = []
+        new_data = {}
         for k, line in enumerate(d):
             if k == 0:
                 continue
-            all_data_dict[str(k)] = line
-    return k
+            if line[0] not in new_data.keys():
+                new_data[line[0]] = line
+                name.append(line[0])
+    writeCSV(new_data)
+    return new_data
 
 
 @app.route('/', methods=['POST', 'GET'])
@@ -33,7 +37,7 @@ def updateData():
 def home():
 
     if request.method == 'POST':
-        updateData()
+        all_data_dict = updateData()
         i = 0
         if request.form['type'] == 'searchByName':
             print(request.form)
@@ -123,6 +127,12 @@ def home():
             return render_template('home.html', result=tmp_data)
         if request.form['type'] == 'add':
             print(request.form)
+            upload_file = request.files["files"]
+            size = len(upload_file.read())
+            upload_file.seek(0)
+            if 1048576 < size:
+                print("larger than 2M")
+                return render_template('home.html', result=all_data_dict)
             for _, all_data_item in all_data_dict.items():
                 if all_data_item[0].lower() == request.form['Name'].lower():
                     return render_template('home.html', result=all_data_dict)
@@ -145,9 +155,7 @@ def home():
             else:
                 tmp.append("")
             # tmp.append(request.form["Picture"])
-            upload_file = request.files["files"]
-            size = len(upload_file.read())
-            upload_file.seek(0)
+
             if size > 2:
                 # if allowed_file(img.filename):
                 img = request.files.get('files')
@@ -168,7 +176,8 @@ def home():
             writeCSV(all_data_dict)
             return render_template('home.html', result=all_data_dict)
     else:
-        updateData()
+        print(request.form)
+        all_data_dict = updateData()
         return render_template('home.html', result=all_data_dict)
 
 
@@ -222,7 +231,7 @@ def writeCSV(tmp_data):
     csv_writer.writerow(["Name", "Salary", "Room", "Telnum", "Picture", "Keywords"])
 
     for _, item in tmp_data.items():
-        print(item)
+        # print(item)
         csv_writer.writerow(item)
 
     f.close()
