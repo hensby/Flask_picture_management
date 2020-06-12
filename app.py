@@ -35,7 +35,6 @@ def updateData():
 @app.route('/', methods=['POST', 'GET'])
 @app.route('/home', methods=['POST', 'GET'])
 def home():
-
     if request.method == 'POST':
         all_data_dict = updateData()
         i = 0
